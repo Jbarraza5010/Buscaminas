@@ -365,7 +365,7 @@ public class HelloController {
     void clickHelp(ActionEvent event) {
         int x = 0;
         int y = 0;
-        if (Hturns == 5){
+        if (Hturns % 5 == 0){
             for (y = 0; y < 7; y++){
             }
                 for (x = 0; x < 7; x++){
