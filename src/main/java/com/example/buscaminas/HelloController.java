@@ -1,12 +1,7 @@
 package com.example.buscaminas;
 
-import com.example.buscaminas.Tile;
-import com.example.buscaminas.Node;
-import com.example.buscaminas.LinkedList;
-import com.example.buscaminas.Time;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

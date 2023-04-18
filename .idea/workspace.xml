@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f77c1a95-c4ee-4246-b3a5-359d137c4bb8" name="Changes" comment="boton de ayuda">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/buscaminas/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/buscaminas/HelloApplication.java" afterDir="false" />
+    <list default="true" id="f77c1a95-c4ee-4246-b3a5-359d137c4bb8" name="Changes" comment="funcion de ayuda para cada boton">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/buscaminas/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/buscaminas/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +73,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681804374585</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="funcion de ayuda para cada boton">
+      <created>1681849347379</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681849347379</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit de nuevo proyecto" />
     <MESSAGE value="boton de ayuda" />
-    <option name="LAST_COMMIT_MESSAGE" value="boton de ayuda" />
+    <MESSAGE value="funcion de ayuda para cada boton" />
+    <option name="LAST_COMMIT_MESSAGE" value="funcion de ayuda para cada boton" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
