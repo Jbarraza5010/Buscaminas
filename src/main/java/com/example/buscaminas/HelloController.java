@@ -27,6 +27,8 @@ public class HelloController {
 
     private int flags = 0;
 
+    private int Hturns = 0;
+
     boolean[][]matrix = new boolean[8][8];
 
     boolean[][]isClicked = new boolean[8][8];
@@ -227,6 +229,9 @@ public class HelloController {
     private Button btn7x7;
 
     @FXML
+    private Button btnHelp;
+
+    @FXML
     private Button btnDummy;
 
     @FXML
@@ -355,12 +360,34 @@ public class HelloController {
                 + x_neg_y_neg(x, y);
         return result;
     }
+
+    @FXML
+    void clickHelp(ActionEvent event) {
+        int i = 0;
+        int j = 0;
+        if (Hturns == 5){
+            for (j = 0; j < 7; j++){
+            }
+                for (i = 0; i < 7; i++){
+                    if (matrix[i][j] == false){
+                        System.out.println("Selecciona la casilla:");
+                        System.out.println(i);
+                        System.out.println(j);
+                        break;
+                    }
+                }
+        }
+        else {
+            System.out.println("Para una pista deben pasar 5 turnos");
+        }
+    }
     @FXML
     void click0x0(ActionEvent event) {
         int x = 0;
         int y = 0;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
