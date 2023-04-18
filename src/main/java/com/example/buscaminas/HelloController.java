@@ -363,16 +363,16 @@ public class HelloController {
 
     @FXML
     void clickHelp(ActionEvent event) {
-        int i = 0;
-        int j = 0;
+        int x = 0;
+        int y = 0;
         if (Hturns == 5){
-            for (j = 0; j < 7; j++){
+            for (y = 0; y < 7; y++){
             }
-                for (i = 0; i < 7; i++){
-                    if (matrix[i][j] == false){
+                for (x = 0; x < 7; x++){
+                    if (matrix[x][y] == false){
                         System.out.println("Selecciona la casilla:");
-                        System.out.println(i);
-                        System.out.println(j);
+                        System.out.println(x);
+                        System.out.println(y);
                         break;
                     }
                 }
@@ -408,6 +408,7 @@ public class HelloController {
         int y = 1;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -428,6 +429,7 @@ public class HelloController {
         int y = 2;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -448,6 +450,7 @@ public class HelloController {
         int y = 3;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -468,6 +471,7 @@ public class HelloController {
         int y = 4;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -488,6 +492,7 @@ public class HelloController {
         int y = 5;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -508,6 +513,7 @@ public class HelloController {
         int y = 6;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -528,6 +534,7 @@ public class HelloController {
         int y = 7;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -548,6 +555,7 @@ public class HelloController {
         int y = 0;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -568,6 +576,7 @@ public class HelloController {
         int y = 1;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -588,6 +597,7 @@ public class HelloController {
         int y = 2;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -608,6 +618,7 @@ public class HelloController {
         int y = 3;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -628,6 +639,7 @@ public class HelloController {
         int y = 4;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -648,6 +660,7 @@ public class HelloController {
         int y = 5;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -668,6 +681,7 @@ public class HelloController {
         int y = 6;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -688,6 +702,7 @@ public class HelloController {
         int y = 7;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -708,6 +723,7 @@ public class HelloController {
         int y = 0;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -728,6 +744,7 @@ public class HelloController {
         int y = 1;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -748,6 +765,7 @@ public class HelloController {
         int y = 2;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -768,6 +786,7 @@ public class HelloController {
         int y = 3;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -788,6 +807,7 @@ public class HelloController {
         int y = 4;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -808,6 +828,7 @@ public class HelloController {
         int y = 5;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -828,6 +849,7 @@ public class HelloController {
         int y = 6;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -848,6 +870,7 @@ public class HelloController {
         int y = 7;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -868,6 +891,7 @@ public class HelloController {
         int y = 0;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -888,6 +912,7 @@ public class HelloController {
         int y = 1;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -908,6 +933,7 @@ public class HelloController {
         int y = 2;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -928,6 +954,7 @@ public class HelloController {
         int y = 3;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -948,6 +975,7 @@ public class HelloController {
         int y = 4;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -968,6 +996,7 @@ public class HelloController {
         int y = 5;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -988,6 +1017,7 @@ public class HelloController {
         int y = 6;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1008,6 +1038,7 @@ public class HelloController {
         int y = 7;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1028,6 +1059,7 @@ public class HelloController {
         int y = 0;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1048,6 +1080,7 @@ public class HelloController {
         int y = 1;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1068,6 +1101,7 @@ public class HelloController {
         int y = 2;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1088,6 +1122,7 @@ public class HelloController {
         int y = 3;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1108,6 +1143,7 @@ public class HelloController {
         int y = 4;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1128,6 +1164,7 @@ public class HelloController {
         int y = 5;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1148,6 +1185,7 @@ public class HelloController {
         int y = 6;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1168,6 +1206,7 @@ public class HelloController {
         int y = 7;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1188,6 +1227,7 @@ public class HelloController {
         int y = 0;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1208,6 +1248,7 @@ public class HelloController {
         int y = 1;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1228,6 +1269,7 @@ public class HelloController {
         int y = 2;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1248,6 +1290,7 @@ public class HelloController {
         int y = 3;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1268,6 +1311,7 @@ public class HelloController {
         int y = 4;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1288,6 +1332,7 @@ public class HelloController {
         int y = 5;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1308,6 +1353,7 @@ public class HelloController {
         int y = 6;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1328,6 +1374,7 @@ public class HelloController {
         int y = 7;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1348,6 +1395,7 @@ public class HelloController {
         int y = 0;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1368,6 +1416,7 @@ public class HelloController {
         int y = 1;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1388,6 +1437,7 @@ public class HelloController {
         int y = 2;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1408,6 +1458,7 @@ public class HelloController {
         int y = 3;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1428,6 +1479,7 @@ public class HelloController {
         int y = 4;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1448,6 +1500,7 @@ public class HelloController {
         int y = 5;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1468,6 +1521,7 @@ public class HelloController {
         int y = 6;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1488,6 +1542,7 @@ public class HelloController {
         int y = 7;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1508,6 +1563,7 @@ public class HelloController {
         int y = 0;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1528,6 +1584,7 @@ public class HelloController {
         int y = 1;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1548,6 +1605,7 @@ public class HelloController {
         int y = 2;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1568,6 +1626,7 @@ public class HelloController {
         int y = 3;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1588,6 +1647,7 @@ public class HelloController {
         int y = 4;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1607,6 +1667,7 @@ public class HelloController {
         int y = 5;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1627,6 +1688,7 @@ public class HelloController {
         int y = 6;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)
@@ -1647,6 +1709,7 @@ public class HelloController {
         int y = 7;
         int bombs = 0;
         if (matrix[x][y] == false){
+            Hturns++;
             isClicked[x][y] = true;
             bombs = x_pos(x, y) + x_neg(x, y) + y_pos(x, y) + y_neg(x, y)
                     + x_pos_y_pos(x, y) + x_neg_y_pos(x, y) + x_pos_y_neg(x, y)

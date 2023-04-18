@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
-
+import com.fazecast.jSerialComm;
 
 public class HelloApplication extends Application {
     @Override
